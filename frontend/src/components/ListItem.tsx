@@ -1,7 +1,3 @@
-import { useSelector } from "react-redux";
-import { RootState } from "../store/reducers";
-import { useEffect } from "react";
-
 function ListItem() {
   
   return (

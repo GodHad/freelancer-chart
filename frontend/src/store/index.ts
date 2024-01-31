@@ -1,10 +1,31 @@
-import { createStore, applyMiddleware } from 'redux';
-import rootReducer from './reducers/index'; 
+import { applyMiddleware, createStore } from "redux";
+import { combineReducers } from "redux";
+import { thunk } from "redux-thunk";
 
-// Define the initial state of your application
-const initialState = {};
+import { socketState } from "./reducers/socketReducer/actionTypes";
+import { BlogState } from "./reducers/blogsReducer/actionTypes";
+import { initialBlogState } from "./reducers/blogsReducer/reducer";
+import socketReducer from "./reducers/socketReducer/reducer";
+import { blogReducer } from "./reducers/blogsReducer/reducer";
 
-// Create the Redux store with the root reducer and middleware (in this case, we use Redux Thunk for async actions)
-const store = createStore(rootReducer, initialState, applyMiddleware());
+const reducer = combineReducers({
+    socketReducer,
+    blogReducer
+})
 
-export default store;
+export default function configureStore(preloadedState: any) {
+    const store = createStore(reducer, preloadedState, applyMiddleware(thunk));
+    return store
+}
+
+export interface RootState {
+    socketReducer: socketState,
+    blogReducer: BlogState
+}
+
+export const initialRootState: RootState = {
+    socketReducer: null,
+    blogReducer: initialBlogState
+}
+
+export const store = configureStore(initialRootState)
