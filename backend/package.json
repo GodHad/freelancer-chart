@@ -8,9 +8,11 @@
     "dev": "nodemon server"
   },
   "author": "Godhad",
+  "type": "module",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongoose": "^8.1.0",
     "morgan": "^1.10.0",

@@ -556,6 +556,10 @@ module.exports = function (webpackEnv) {
               exclude: [/^$/, /\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
               type: 'asset/resource',
             },
+            {
+              test: /\.css$/,
+              use: ["style-loader", "css-loader", "postcss-loader"],
+            },
             // ** STOP ** Are you adding a new loader?
             // Make sure to add the new loader(s) before the "file" loader.
           ],

@@ -1,13 +1,32 @@
-const express = require("express");
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
+import http from "http";
+import mongoose from "mongoose";
+import express from "express";
+import morgan from "morgan";
+import cors from "cors";
+import router from "./router.js";
 
 const app = express();
+const server = http.createServer(app);
 
-app.use(bodyParser.json());
-app.use(morgan('dev'));
-// Start the server
-const PORT = 8081;
-app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`);
-});
+mongoose
+  .connect("mongodb://127.0.0.1:27017/freelancer-chart")
+  .then(() => {
+    console.log("MongoDB connected.");
+
+    app.use(express.urlencoded({ extended: true }));
+    app.use(express.json({}));
+
+    app.use(cors());
+    app.use(morgan("dev"));
+    app.use("/", router);
+
+    const PORT = 8081;
+
+    server.listen(PORT, () => {
+      console.log(`Server started on port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.log("DB connect error.", err);
+    process.exit(1);
+  });
