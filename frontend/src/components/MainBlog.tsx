@@ -27,7 +27,7 @@ function MainBlog() {
             <Skill name={"31 Jan, 2024"} color="info" />
           </div>
           <button className="inline-block px-6 py-3 mt-2 rounded-md bg-green-700 text-gray-100">
-            Bid on this post.
+            Show sample bids for this post.
           </button>
         </>
       ) : (

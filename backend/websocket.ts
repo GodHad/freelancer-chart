@@ -1,6 +1,6 @@
-import { WebSocketServer } from "ws";
+import WebSocket from "ws";
 
-const wss = new WebSocketServer({ port: 8003 });
+const wss = new WebSocket.Server({ port: 8003 });
 
 wss.on("connection", function connection(ws) {
   // Send a welcome message to the newly connected client

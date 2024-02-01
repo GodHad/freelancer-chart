@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
-import Task from "./models/Task.js";
-import wss from "./websocket.js";
+import Task from "./models/Task";
+import wss from "./websocket";
 import WebSocket from "ws";
 
 router.get("/get_all_blogs", (req, res) => {
@@ -39,6 +39,8 @@ router.post("/new-post-notification", (req, res) => {
 router.post("/show_blog", (req, res) => {
   const { _id } = req.body;
   Task.findById(_id).then((task) => {
+    if (task === null)
+      return res.status(400).json({ success: false, error: "Cannot find." });
     task.view = true;
     task
       .save()
