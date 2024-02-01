@@ -5,7 +5,7 @@ import { thunk } from "redux-thunk";
 import { socketState } from "./reducers/socketReducer/actionTypes";
 import { BlogState } from "./reducers/blogsReducer/actionTypes";
 import { initialBlogState } from "./reducers/blogsReducer/reducer";
-import socketReducer from "./reducers/socketReducer/reducer";
+import socketReducer, { initialSocketReducer } from "./reducers/socketReducer/reducer";
 import { blogReducer } from "./reducers/blogsReducer/reducer";
 
 const reducer = combineReducers({
@@ -24,7 +24,7 @@ export interface RootState {
 }
 
 export const initialRootState: RootState = {
-    socketReducer: null,
+    socketReducer: initialSocketReducer,
     blogReducer: initialBlogState
 }
 

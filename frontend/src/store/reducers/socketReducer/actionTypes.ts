@@ -20,4 +20,7 @@ export type socketActionTypes =
   | SocketConnectSuccess
   | SocketConnectError;
 
-export type socketState = WebSocket | null;
+export type socketState = {
+    socket: WebSocket | null,
+    loading: boolean
+};

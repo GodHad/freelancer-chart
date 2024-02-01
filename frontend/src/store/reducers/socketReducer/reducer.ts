@@ -5,17 +5,22 @@ import {
   socketActionTypes
 } from "./actionTypes";
 
-export default (state = null, action: socketActionTypes) => {
+export const initialSocketReducer = {
+    socket: null,
+    loading: false
+}
+
+export default (state = initialSocketReducer, action: socketActionTypes) => {
   switch (action.type) {
     case SOCKET_CONNECT:
         console.log('Socket is connecting WSS.')
-        return state;
+        return {...state, loading: true};
     case SOCKET_CONNECT_SUCCESS:
         console.log('Socket connect successfully.')
-        return action.payload;
+        return {...state, socket: action.payload};
     case SOCKET_CONNECT_ERROR:
         console.log('Socket connect Error');
-        return null;
+        return initialSocketReducer;
     default:
       return state;
   }

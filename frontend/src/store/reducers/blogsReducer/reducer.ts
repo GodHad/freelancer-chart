@@ -2,10 +2,11 @@ import {
   BlogActionTypes,
   CLICK_BLOG,
   SHOW_BLOG,
+  ADD_BLOG,
   BlogState,
+  GET_BLOGS,
 } from "./actionTypes";
-
-import { Blog } from "./Blog";
+import { GetBlogs } from "./actions";
 
 export const initialBlogState: BlogState = {
   blogs: [],
@@ -17,6 +18,16 @@ export const blogReducer = (
   action: BlogActionTypes
 ) => {
     switch (action.type) {
+        case GET_BLOGS: 
+            return {
+                ...state,
+                blogs: action.payload.blogs
+            }
+        case ADD_BLOG: 
+            return {
+                ...state,
+                blogs: [action.payload.blog].concat(state.blogs)
+            }
         case CLICK_BLOG:
             return {
                 ...state,

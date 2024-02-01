@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
-import Main from "./layout/Main";
+import Main from "./layout/MainContent";
 
 const App: React.FC = () => {
   

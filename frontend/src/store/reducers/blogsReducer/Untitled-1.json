@@ -1,0 +1,254 @@
+{
+    "postData": {
+        "NDA": null,
+        "actionText": "",
+        "appended_descr": "Seeking an expert to craft a user-centric web platform facilitating connection between service providers and seekers, a la Care.com. My vision encompasses a seamless online experience akin to Care.com, streamlining caregiving service discovery, connection, and engagement through robust features and integrations.\n\nEssential Features:\n- **User Profiles**: Customizable profiles for both service providers and seekers to present qualifications, requirements, and other pertinent information.\n- **Search Functionality**: Intuitive search engine enabling users to quickly find suitable service providers or seekers based on specific criteria.\n- **Messaging System**: Secure and private messaging to allow clear, direct communication between users within the platform.\n\nUser Demographics:\n- **Dual User Base**: The platform must cater equally to the needs of service providers and service seekers, with user interfaces and experiences tailored to both.\n\nThird-Party Integrations:\n- **Payment Processing**: Integration of reliable payment gateways for smooth financial transactions.\n- **Social Media Logins**: Easy social media account linking for a quick and hassle-free sign-up/log-in process.\n\nIdeal Skills & Experience:\n- Proven track record in developing similar marketplaces or service platforms.\n- Proficiency in WordPress, PHP, or a relevant CMS.\n- Experience with implementing search algorithms and messaging systems.\n- Familiarity with payment gateway and social media API integrations.\n- Strong emphasis on UX/UI design, ensuring accessibility and convenience.\n- Solid understanding of security best practices to protect user data.\n\nThis project calls for a creator who shares my vision for a connected and supportive service community. If you specialize in bringing such platforms to life, I invite you to bid and join me in this exciting venture!",
+        "bid_stats": {
+            "bid_count": false
+        },
+        "bidperiod": 7,
+        "commitment": false,
+        "completedProjects": 3,
+        "currency": "€",
+        "currencyCode": "EUR",
+        "currency_details": {
+            "code": "EUR",
+            "country": "EU",
+            "exchangerate": "1.083712",
+            "id": "8",
+            "is_external": "0",
+            "is_virtual": "0",
+            "name": "Euro",
+            "seq": "30",
+            "sign": "€"
+        },
+        "deleted": false,
+        "exchangerate": "1.083712",
+        "featured": false,
+        "free_bid_until": 0,
+        "fulltime": false,
+        "hideBids": false,
+        "hireme": false,
+        "id": 37713033,
+        "imgUrl": "https://www.freelancer.com/img/unknown.png",
+        "ip_contract": null,
+        "isLocal": false,
+        "isTest": false,
+        "jobString": "PHP, Website Design, HTML, Software Architecture, MySQL",
+        "jobs": [
+            "3",
+            "17",
+            "335",
+            "116",
+            "305"
+        ],
+        "jobs_details": [
+            {
+                "id": 335,
+                "name": "HTML",
+                "seo_url": "html"
+            },
+            {
+                "id": 305,
+                "name": "MySQL",
+                "seo_url": "mysql"
+            },
+            {
+                "id": 3,
+                "name": "PHP",
+                "seo_url": "php"
+            },
+            {
+                "id": 116,
+                "name": "Software Architecture",
+                "seo_url": "software-architecture"
+            },
+            {
+                "id": 17,
+                "name": "Website Design",
+                "seo_url": "website-design"
+            }
+        ],
+        "language": "en",
+        "linkUrl": "/projects/37713033.html",
+        "location": null,
+        "maxbudget": 1500,
+        "minbudget": 750,
+        "non_compete": false,
+        "nonpublic": false,
+        "overallReputation": 5,
+        "paymentVerified": "1",
+        "pool_ids": [
+            1
+        ],
+        "projIsHourly": false,
+        "project_management": false,
+        "qualified": false,
+        "recruiter": false,
+        "reviews": 3,
+        "sealed": false,
+        "seo_url": 37713033,
+        "submitDate": false,
+        "text": "",
+        "time": 1706707288,
+        "time_submitted": 1706707288,
+        "title": "Care-Matching Web Platform Build",
+        "type": "fixed",
+        "urgent": false,
+        "userId": 69474922,
+        "userName": "Serviloo"
+    },
+    "userData": {
+        "id": 69474922,
+        "username": "Serviloo",
+        "closed": false,
+        "avatar": "/img/unknown.png",
+        "reputation": {
+            "entire_history": {
+                "overall": 0,
+                "on_budget": 0,
+                "on_time": 0,
+                "positive": 0,
+                "category_ratings": {
+                    "quality": 0,
+                    "communication": 0,
+                    "expertise": 0,
+                    "professionalism": 0,
+                    "hire_again": 0
+                },
+                "all": 0,
+                "reviews": 0,
+                "incomplete_reviews": 0,
+                "complete": 0,
+                "incomplete": 0,
+                "completion_rate": 0,
+                "user_id": 69474922
+            },
+            "last3months": {
+                "overall": 0,
+                "on_budget": 0,
+                "on_time": 0,
+                "positive": 0,
+                "category_ratings": {
+                    "quality": 0,
+                    "communication": 0,
+                    "expertise": 0,
+                    "professionalism": 0,
+                    "hire_again": 0
+                },
+                "all": 0,
+                "reviews": 0,
+                "incomplete_reviews": 0,
+                "complete": 0,
+                "incomplete": 0,
+                "completion_rate": 0,
+                "user_id": 69474922
+            },
+            "last12months": {
+                "overall": 0,
+                "on_budget": 0,
+                "on_time": 0,
+                "positive": 0,
+                "category_ratings": {
+                    "quality": 0,
+                    "communication": 0,
+                    "expertise": 0,
+                    "professionalism": 0,
+                    "hire_again": 0
+                },
+                "all": 0,
+                "reviews": 0,
+                "incomplete_reviews": 0,
+                "complete": 0,
+                "incomplete": 0,
+                "completion_rate": 0,
+                "user_id": 69474922
+            },
+            "user_id": 69474922,
+            "role": "freelancer",
+            "earnings_score": 0,
+            "job_history": {
+                "count_other": 0,
+                "job_counts": []
+            }
+        },
+        "jobs": [],
+        "registration_date": 1683793073,
+        "limited_account": false,
+        "display_name": "Serviloo",
+        "location": {
+            "country": {
+                "name": "Italy",
+                "flag_url": "/img/flags/png/it.png",
+                "code": "it",
+                "highres_flag_url": "/img/flags/highres_png/italy.png",
+                "flag_url_cdn": "//cdn6.f-cdn.com/img/flags/png/it.png",
+                "highres_flag_url_cdn": "//cdn3.f-cdn.com/img/flags/highres_png/italy.png"
+            },
+            "city": "BOrgomanero"
+        },
+        "avatar_large": "/img/unknown.png",
+        "role": "employer",
+        "chosen_role": "employer",
+        "status": {
+            "payment_verified": true,
+            "email_verified": true,
+            "deposit_made": true,
+            "profile_complete": false,
+            "phone_verified": true,
+            "identity_verified": false,
+            "facebook_connected": false,
+            "freelancer_verified_user": false,
+            "linkedin_connected": false,
+            "custom_charge_verified": false
+        },
+        "avatar_cdn": "//cdn6.f-cdn.com/img/unknown.png",
+        "avatar_large_cdn": "//cdn6.f-cdn.com/img/unknown.png",
+        "primary_currency": {
+            "id": 8,
+            "code": "EUR",
+            "sign": "€",
+            "name": "Euro",
+            "exchange_rate": 1.084511,
+            "country": "EU"
+        },
+        "qualifications": [],
+        "primary_language": "en",
+        "cover_image": {
+            "current_image": {
+                "url": "//cdn2.f-cdn.com/static/img/profiles/cover-product.jpg",
+                "description": "",
+                "width": 1920,
+                "height": 550,
+                "context": {
+                    "id": 69474922,
+                    "type": "user_profile"
+                }
+            }
+        },
+        "portfolio_count": 0,
+        "preferred_freelancer": false,
+        "public_name": "Simone C.",
+        "company": "Serviloo S.r.l.",
+        "recommendations": 0,
+        "pool_ids": [],
+        "enterprise_ids": [],
+        "escrowcom_interaction_required": false,
+        "enterprises": [],
+        "timezone": {
+            "id": 275,
+            "country": "IT",
+            "timezone": "Europe/Rome",
+            "offset": 1
+        },
+        "responsiveness": 3,
+        "oauth_password_credentials_allowed": false,
+        "registration_completed": true,
+        "is_profile_visible": true,
+        "operating_areas": [],
+        "equipment_groups": [],
+        "avatar_xlarge": "/img/unknown.png",
+        "avatar_xlarge_cdn": "//cdn6.f-cdn.com/img/unknown.png",
+        "document_submissions": []
+    }
+}

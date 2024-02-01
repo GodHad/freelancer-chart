@@ -153,7 +153,7 @@ export class Blog {
     if(initializer.postData.currency_details) this.currency_details = initializer.postData.currency_details;
     if(initializer.postData.deleted) this.deleted = initializer.postData.deleted;
     if(initializer.userData.display_name) this.display_name = initializer.userData.display_name;
-    if(initializer.userData.reputation.entire_history) this.entire_history = initializer.userdata.reputation.entire_history;
+    if(initializer.userData.reputation.entire_history) this.entire_history = initializer.userData.reputation.entire_history;
     if(initializer.postData.featured) this.featured = initializer.postData.featured;
     if(initializer.postData.fulltime) this.fulltime = initializer.postData.fulltime;
     if(initializer.postData.hideBids) this.hideBids = initializer.postData.hidebids;

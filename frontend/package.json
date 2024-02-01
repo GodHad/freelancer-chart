@@ -17,6 +17,7 @@
     "@types/react-redux": "^7.1.33",
     "@types/redux-thunk": "^2.1.0",
     "autoprefixer": "^10.4.17",
+    "axios": "^1.6.7",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
@@ -147,5 +148,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "proxy": "http://localhost:8081/"
 }
