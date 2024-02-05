@@ -28,10 +28,7 @@ const SkillSchema = new mongoose_1.Schema({
     name: {
         type: String,
         required: true,
-    },
-    category: {
-        type: mongoose_1.Schema.Types.ObjectId,
-    },
+    }
 });
 exports.default = mongoose_1.default.model("Skill", SkillSchema);
 //# sourceMappingURL=Skill.js.map

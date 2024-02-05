@@ -33,11 +33,10 @@ const TaskSchema = new mongoose_1.Schema({
         type: Object,
         required: true,
     },
-    view: {
-        type: Boolean,
-        default: false,
-    },
+    viewUsers: [{
+            type: mongoose_1.Schema.Types.ObjectId,
+            ref: 'User'
+        }],
 });
-exports.default = mongoose_1.default.model("TaskSchema", TaskSchema);
-;
+exports.default = mongoose_1.default.model("Task", TaskSchema);
 //# sourceMappingURL=Task.js.map

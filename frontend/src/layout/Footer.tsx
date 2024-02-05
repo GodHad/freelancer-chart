@@ -1,14 +1,22 @@
-function Footer() {
+export default function Footer() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 px-4 py-3 text-center text-white bg-gray-800">
-      This is a Blog Homepage by justin22.
-      <a
-        className="text-gray-200 underline"
-        href="https://tailwindcomponents.com/component/blog-homepage-1">
-        Component details
-      </a>
-    </div>
+    <>
+      <footer className="relative pt-8 pb-6 bg-gray-800 text-white bottom-0">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center md:justify-between justify-center">
+            <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+              <div className="text-sm text-blueGray-500 font-semibold py-1">
+                Copyright © {new Date().getFullYear()} Freelancer Bid Helper by
+                <a
+                  href="https://www.creative-tim.com?ref=nr-footer"
+                  className="text-blueGray-500 hover:text-blueGray-800">
+                  Creative Sunharius@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
-
-export default Footer;

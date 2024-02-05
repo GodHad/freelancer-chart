@@ -1,13 +1,14 @@
-import mongoose, {Schema} from "mongoose";
+import mongoose, { Schema, Document } from "mongoose";
 
-const SkillSchema = new Schema({
+interface Skill extends Document {
+  name: string;
+}
+
+const SkillSchema: Schema<Skill> = new Schema({
   name: {
     type: String,
     required: true,
-  },
-  category: {
-    type: Schema.Types.ObjectId,
-  },
+  }
 });
 
-export default mongoose.model("Skill", SkillSchema);
+export default mongoose.model<Skill>("Skill", SkillSchema);

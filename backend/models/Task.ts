@@ -1,6 +1,12 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { Schema, Document } from "mongoose";
 
-const TaskSchema = new Schema({
+interface Task extends Document {
+  postData: object;
+  userData: object;
+  viewUsers: Array<Schema.Types.ObjectId>;
+}
+
+const TaskSchema: Schema<Task> = new Schema({
   postData: {
     type: Object,
     required: true,
@@ -9,10 +15,10 @@ const TaskSchema = new Schema({
     type: Object,
     required: true,
   },
-  view: {
-    type: Boolean,
-    default: false,
-  },
+  viewUsers: [{
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  }],
 });
 
-export default mongoose.model("TaskSchema", TaskSchema);;
+export default mongoose.model<Task>("Task", TaskSchema);

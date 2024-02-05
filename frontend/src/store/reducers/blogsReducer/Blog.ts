@@ -1,4 +1,4 @@
-interface Job {
+export interface Job {
   id: number;
   name: string;
   seo_url: string;
@@ -84,7 +84,7 @@ export class Blog {
   recruiter: boolean = false;
   reviews: number = 0;
   sealed: boolean = false;
-  time_submitted: Date = new Date();
+  time_submitted: number = 0;
   title: string = "";
   type: string = "";
   urgent: boolean = false;
@@ -103,7 +103,7 @@ export class Blog {
     incomplete_reviews: 0,
     completion_rate: 0,
   };
-  registration_date: Date = new Date();
+  registration_date: number = 0;
   display_name: string = "";
   location: Location = {
     country: "",

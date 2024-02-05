@@ -1,6 +1,16 @@
-import mongoose, {Schema} from "mongoose";
+import mongoose, { Schema, Document } from "mongoose";
 
-const BidTempSchema = new Schema({
+interface BidTemp extends Document {
+  userId: Schema.Types.ObjectId;
+  content: string;
+  skillSets: Schema.Types.ObjectId[];
+}
+
+const BidTempSchema: Schema<BidTemp> = new Schema({
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  },
   content: {
     type: String,
     required: true,
@@ -13,4 +23,4 @@ const BidTempSchema = new Schema({
   ],
 });
 
-export default mongoose.model("BidTemp", BidTempSchema);
+export default mongoose.model<BidTemp>("BidTemp", BidTempSchema);
