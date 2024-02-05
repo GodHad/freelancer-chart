@@ -4,6 +4,8 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import Select from "react-select";
 import axios from "axios";
 import { AddBid } from "../../store/reducers/bidsReducer/actions";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
 
 interface Skill {
   value: string;
@@ -16,7 +18,8 @@ interface Props {
 }
 
 export default function BidForm({ create, onCloseBtnClick }: Props) {
-  const [skills, setSkills] = useState<Array<Skill>>([]);
+  const skills = useSelector((state: RootState) => state.skillReducer);
+  console.log(skills)
   const [selectedSkills, setSelectedSkills] = useState<Array<Skill>>([]);
   const [bidContent, setBidContent] = useState<string>("");
 
@@ -30,24 +33,6 @@ export default function BidForm({ create, onCloseBtnClick }: Props) {
       })),
     });
   };
-
-  useEffect(() => {
-    const token = window.localStorage.getItem("jwtToken");
-    axios
-      .get("/skill/get_skills", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      .then((res) => {
-        setSkills(
-          res.data?.skills.map((skill: any) => ({
-            value: skill._id,
-            label: skill.name,
-          }))
-        );
-      });
-  }, []);
 
   return (
     <>

@@ -9,4 +9,4 @@ interface GetSkills {
 
 export type SkillActionTypes = GetSkills;
 
-export type SkillState = Array<Skill> | null;
+export type SkillState = Array<any>;
